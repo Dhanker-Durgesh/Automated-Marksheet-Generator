@@ -1,0 +1,43 @@
+AUTOMATED MARKSHEET GENERATOR
+
+OVERVIEW
+Automated Marksheet Generator is a Python 3 command-line program for creating a marksheet for one student. It reads student records from a CSV file with Pandas, looks up a student by roll number, and prints the marks, total, percentage, grade, and pass/fail result.
+
+HOW IT WORKS
+The program expects these CSV columns: RollNo, Name, Maths, Physics, and Programming. It checks that the file exists and contains the required columns. Each subject mark must be a whole number from 0 to 100. Rows with invalid marks are skipped with a warning; a missing file or unknown roll number produces a clear message.
+
+The total is calculated out of 300, and the percentage is shown to two decimal places. Grades follow this scale:
+- 90 and above: A+
+- 80 to below 90: A
+- 70 to below 80: B
+- 60 to below 70: C
+- 50 to below 60: D
+- 40 to below 50: E
+- Below 40: F
+
+A student passes only when every subject mark is at least 40. The program reports FAIL and names any subject below 40.
+
+RUN THE PROGRAM
+Install Pandas if needed:
+  python -m pip install pandas
+
+Run the default sample data:
+  python one.py
+
+Choose option 1 and enter a roll number when prompted. To run with the invalid-row test data:
+  python one.py marks_invalid.csv
+
+TEST RESULTS
+The supplied test outputs cover the four assigned cases, with the invalid-input case split into two checks:
+- Normal input: Anita (101) receives 255/300, 85.00%, Grade A, PASS.
+- Boundary input: Rahul (102), whose lowest mark is exactly 40, receives 135/300, 45.00%, Grade E, PASS.
+- Invalid roll number: Roll number 999 is reported as not found.
+- Invalid CSV row: Roll 106, with Maths marked 105, is skipped with a warning and is then not found in the valid records.
+- Different valid scenario: Suman (103) receives 165/300, 55.00%, Grade D, and FAIL because Maths is below 40.
+
+PROJECT FILES
+- one.py contains the program.
+- marks.csv contains the sample student records.
+- marks_invalid.csv adds an invalid row for validation testing.
+- Test_cases_passed.pdf contains the test evidence report.
+- screenshots/ contains the project brief image and test output screenshots.
