@@ -1,0 +1,11 @@
+Test Case 1: Normal input — Anita (Roll No. 101)
+
+===== AUTOMATED MARKSHEET GENERATOR =====
+1. Single marksheet
+Enter your choice: Enter roll number: 
+Roll No: 101 | Name: Anita
+Maths: 85 | Physics: 90 | Programming: 80
+Total: 255/300 | Percentage: 85.00%
+Grade: A | Result: PASS
+
+

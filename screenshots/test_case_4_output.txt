@@ -1,0 +1,6 @@
+Test Case 3(b): Invalid CSV row — roll 106
+
+===== AUTOMATED MARKSHEET GENERATOR =====
+1. Single marksheet
+Enter your choice: Warning: Row for roll 106 skipped - marks must be between 0 and 100.
+Enter roll number: Roll number 106 not found.

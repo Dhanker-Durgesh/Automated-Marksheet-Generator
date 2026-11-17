@@ -1,0 +1,10 @@
+Test Case 2: Boundary / minimum input — Rahul (Roll No. 102)
+
+===== AUTOMATED MARKSHEET GENERATOR =====
+1. Single marksheet
+Enter your choice: Enter roll number: 
+Roll No: 102 | Name: Rahul
+Maths: 40 | Physics: 45 | Programming: 50
+Total: 135/300 | Percentage: 45.00%
+Grade: E | Result: PASS
+

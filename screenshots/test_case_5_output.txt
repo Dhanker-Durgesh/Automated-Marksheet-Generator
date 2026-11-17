@@ -1,0 +1,9 @@
+Test Case 4: Different valid scenario — Suman (Roll No. 103)
+
+===== AUTOMATED MARKSHEET GENERATOR =====
+1. Single marksheet
+Enter your choice: Enter roll number: 
+Roll No: 103 | Name: Suman
+Maths: 35 | Physics: 70 | Programming: 60
+Total: 165/300 | Percentage: 55.00%
+Grade: D | Result: FAIL (Maths below 40)
